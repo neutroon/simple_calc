@@ -4,17 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <div>
+    <div class="card w-50 mx-auto my-5">
+    <div class="card-body ">
+        <h1 class="text-center mb-5  bg-primary-subtle border border-warning-subtle rounded">Simple Calculator</h1>
+
+        <label for="firstNum">First Number</label>
+        <input type="number" name="" id="firstNum" class="form-control shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+
+        <label for="secondNum">Second Number</label>
+        <input type="number" id="secondNum" class="form-control shadow-lg p-3 mb-5 bg-body-tertiary rounded">
 
 
-        
+        <button class="btn btn-primary m-3 fw-bold" onclick=" add();">add</button>
+        <button class="btn btn-primary m-3 fw-bold" onclick="subtract();">subtract</button>
+        <button class="btn btn-danger m-3 fw-bold" onclick=" clearFields();">clear</button>
+
+
+
+
+
+        <input type="number" id="result" class="form-control shadow-lg p-3 mb-5 bg-body-tertiary rounded w25" placeholder="result" disabled>
+
+
+    </div>
     </div>
 
-
-    <script src="main.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
